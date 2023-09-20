@@ -1,0 +1,10 @@
+title Uuden muistiinpanon luominen
+
+participant kauttaja
+participant  nettiselain
+participant palvelin
+    kauttaja->>palvelin: Kirjoittaa muistiinpanon
+    nettiselain->>palvelin:muistiinpanon hyväksyminen/hylkääminen
+    nettiselain->>palvelin: palvelin vastaanottaa pyynnön
+    kauttaja->palvelin:päivittää sivun
+    palvelin->>nettiselain:Päivitetty muistiinpano listaus
