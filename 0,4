@@ -1,0 +1,10 @@
+title Uuden muistiinpanon luominen
+
+participant käyttäjä
+participant  nettiselain
+participant palvelin
+käyttäjä->>nettiselain: Kirjoittaa uuden muistiinpanon
+nettiselain->>palvelin: Luo uuden muistiinpanon
+nettiselain->>palvelin: Hyväksyy tai hylkää uuden muistiinpanon
+palvelin->>nettiselain: Päivittää muistiinpano listaan uuden muistiinpanon
+nettiselain->>käyttäjä: Näkee uuden muistiinpanon päivittämällä sivun
