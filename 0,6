@@ -1,0 +1,8 @@
+kauttajattaja->nettiselain:kauttaja lisaa  noten ja lahettää uuden viestin
+nettiselain->kauttajattaja: nettiselainselain nayttaa palvelimen palauttaman HTML:n
+ jossa on listattu uudet viestit 
+nettiselain->kauttajattaja: nettiselain näyttää palvelimen jossa on listattu uudet viestit 
+
+palvelin->nettiselain: GET data.json
+palvelin->nettiselain: listaa uudet viestit
+palvelin->nettiselain: suorittaa js-koodin
