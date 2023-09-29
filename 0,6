@@ -1,7 +1,12 @@
-kauttajattaja->nettiselain:kauttaja lisaa  noten ja lahettää uuden viestin
-nettiselain->kauttajattaja: nettiselainselain nayttaa palvelimen palauttaman HTML:n
+title 0,6
+participant kauttaja
+participant  nettiselain
+participant palvelin
+
+kauttaja->nettiselain:kauttaja lisaa  noten ja lahettää uuden viestin
+nettiselain->kauttaja: nettiselainselain nayttaa palvelimen palauttaman HTML:n
  jossa on listattu uudet viestit 
-nettiselain->kauttajattaja: nettiselain näyttää palvelimen jossa on listattu uudet viestit 
+nettiselain->kauttaja: nettiselain näyttää palvelimen jossa on listattu uudet viestit 
 
 palvelin->nettiselain: GET data.json
 palvelin->nettiselain: listaa uudet viestit
